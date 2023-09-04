@@ -40,6 +40,8 @@ const Carosel = () => {
                     arrowSize={1000}
 
 
+
+
                 >
                     {content.map((c, key) => (
                         <div key={key} className="rounded-2xl p-5 gap-2 bg-black/70 mb-10">

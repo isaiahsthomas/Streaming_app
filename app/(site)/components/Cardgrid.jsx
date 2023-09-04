@@ -36,7 +36,7 @@ const Cardgrid = () => {
                     <div className="p-4">
                         <h2 className="text-lg text-center font-semibold text-white">{val.title}</h2>
                         <p className="text-gray-400 mt-2">{val.desc}</p>
-                        <button className="mt-3 py-2 px-4 text-violet-700 bg-white rounded-md transition hover:text-white hover:bg-pink-600 text-sm w-full hover:animate-bounce ">
+                        <button className="mt-3 py-2 px-4 text-violet-700 bg-white rounded-md transition hover:text-white hover:bg-pink-600 text-sm w-full hover:animate-bounce">
                             <a href={"../Gallery/" + val.id}>Watch Now</a>
                         </button>
                     </div>

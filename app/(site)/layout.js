@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={Alegreya.className}>
-        <div className="grid place-items-center bg-gradient-to-b from-violet-900 p-8">
+        <div className="grid place-items-center bg-black/40 p">
           <Sidebar />
         </div>
         {children}

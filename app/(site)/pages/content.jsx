@@ -31,7 +31,7 @@ const Sidebar = async () => {
         <div className='flex'>
             {RouteDesc.map((route) => (
                 <Link href={route.href}>
-                    <div className="flex gap-2 mt-2 ml-3 mb-9 mr-3 p-8 transition items-center hover:bg-pink-600 shadow bg-violet-900 border rounded-md space-x-1">
+                    <div className="flex gap-2 mt-2 ml-3 mb-9 mr-3 p-8 transition items-center hover:bg-pink-600 shadow  rounded-md space-x-1">
                         <div>{route.img}</div>
                         <h1>{route.title}</h1>
                     </div>
