@@ -11,7 +11,7 @@ export default function Home() {
         <Carosel />
 
       </div>
-      <div className='mt-10 bg-gradient-to-t from-violet-900'>
+      <div>
         <h1 className='text-center'>Gallery</h1>
         <Cardgrid />
       </div>

@@ -27,16 +27,16 @@ const Cardgrid = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 m-4">
             {content && content.map(val => (
-                <div className="bg-gray-900 rounded-lg overflow-hidden shadow-md transition hover:shadow-lg">
+                <div className="bg-gradient-to-r from-violet-900 to-indigo-900 rounded-lg overflow-hidden shadow-md transition hover:shadow-lg ease-in-out transform hover:scale-125 transition duration-500 px-6 py-2 m-6 inline ">
                     <div className="relative pb-[55%]"> {/* Aspect ratio for a square image */}
                         <img className="absolute h-full w-full object-cover" src={val.image_path} alt="" />
                     </div>
                     <div className="p-4">
-                        <h2 className="text-lg font-semibold text-white">{val.title}</h2>
+                        <h2 className="text-lg text-center font-semibold text-white">{val.title}</h2>
                         <p className="text-gray-400 mt-2">{val.desc}</p>
-                        <button className="mt-3 py-2 px-4 text-violet-700 bg-white rounded-md transition hover:text-white hover:bg-gray-500 text-sm w-full">
+                        <button className="mt-3 py-2 px-4 text-violet-700 bg-white rounded-md transition hover:text-white hover:bg-pink-600 text-sm w-full hover:animate-bounce ">
                             <a href={"../Gallery/" + val.id}>Watch Now</a>
                         </button>
                     </div>

@@ -39,9 +39,10 @@ const Carosel = () => {
                     showIndicators={false}
                     arrowSize={1000}
 
+
                 >
                     {content.map((c, key) => (
-                        <div key={key} className="rounded-2xl p-5 gap-2  w-full transition hover:bg-black/70">
+                        <div key={key} className="rounded-2xl p-5 gap-2 bg-black/70 mb-10">
                             <img className="rounded-3xl" src={c.image_path} alt="" />
                             <div className="flex justify-center">
                                 <h1 className="text-3xl m-3 p-4 rounded-md">{c.title}</h1>
@@ -61,3 +62,4 @@ const Carosel = () => {
 }
 
 export default Carosel;
+
