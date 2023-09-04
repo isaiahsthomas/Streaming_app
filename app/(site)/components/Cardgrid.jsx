@@ -28,8 +28,8 @@ const Cardgrid = () => {
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 m-4">
-            {content && content.map(val => (
-                <div className="bg-gradient-to-r from-violet-900 to-indigo-900 rounded-lg overflow-hidden shadow-md transition hover:shadow-lg ease-in-out transform hover:scale-125 transition duration-500 px-6 py-2 m-6 inline ">
+            {content && content.map((val, key) => (
+                <div key={key} className="bg-gradient-to-r from-violet-900 to-indigo-900 rounded-lg overflow-hidden shadow-md transition hover:shadow-lg ease-in-out transform hover:scale-125 transition duration-500 px-6 py-2 m-6 inline ">
                     <div className="relative pb-[55%]"> {/* Aspect ratio for a square image */}
                         <img className="absolute h-full w-full object-cover" src={val.image_path} alt="" />
                     </div>

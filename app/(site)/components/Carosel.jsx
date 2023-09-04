@@ -31,7 +31,7 @@ const Carosel = () => {
     return (
         content && (
             <div className="">
-                <h1 className="text-5xl p-10 text-center">Most Popular</h1>
+                <h1 className="text-5xl p-10 text-center">Newest Added</h1>
                 <Carousel
                     showThumbs={false}
                     infiniteLoop={true}
